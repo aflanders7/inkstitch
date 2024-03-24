@@ -1584,7 +1584,7 @@ msgstr "增减底部针迹行距。"
 msgid "Stagger rows this many times before repeating"
 msgstr "针迹偏移"
 
-#: lib/elements/fill_stitch.py:319 lib/elements/satin_column.py:193
+#: lib/elements/fill_stitch.py:319 lib/elements/satin_column.py:203
 msgid "Length of the cycle by which successive stitch rows are staggered. Fractional values are allowed and can have less visible diagonals than integer values."
 msgstr ""
 
