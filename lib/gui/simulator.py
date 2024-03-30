@@ -1126,8 +1126,8 @@ class SplitSimulatorWindow(wx.Frame):
 
     def on_close(self, event):
         if self.detached_simulator_frame:
-            self.detached_simulator_frame.Destroy()
-        self.Destroy()
+            wx.CallAfter(self.detached_simulator_frame.Destroy)
+        wx.CallAfter(self.Destroy)
 
     def toggle_detach_simulator(self):
         if self.detached_simulator_frame:
