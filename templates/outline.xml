@@ -11,7 +11,8 @@
             </submenu>
         </effects-menu>
     </effect>
-    <param name="ratio" type="float" appearance="full" gui-text="Ratio" precision="2" min="0" max="1">0</param>
+    <param name="ratio" type="float" appearance="full" gui-text="Ratio" precision="4" min="0" max="1">0</param>
+    <param name="buffer" type="float" appearance="full" gui-text="Buffer (mm)" precision="3" min="0.001" max="1">0</param>
     <param name="allow-holes" type="boolean" gui-text="Allow Holes">false</param>
     <script>
         {{ command_tag | safe }}
