@@ -8,7 +8,7 @@ from copy import deepcopy
 
 import inkex
 import numpy as np
-from inkex import bezier
+from inkex import bezier, BaseElement
 
 from ..commands import find_commands
 from ..debug import debug
@@ -22,7 +22,7 @@ from ..svg import (PIXELS_PER_MM, apply_transforms, convert_length,
                    get_node_transform)
 from ..svg.tags import INKSCAPE_LABEL, INKSTITCH_ATTRIBS
 from ..utils import Point, cache
-from ..utils.cache import get_stitch_plan_cache, CacheKeyGenerator
+from ..utils.cache import CacheKeyGenerator, get_stitch_plan_cache
 
 
 class Param(object):
@@ -58,7 +58,7 @@ def param(*args, **kwargs):
 
 
 class EmbroideryElement(object):
-    def __init__(self, node):
+    def __init__(self, node: BaseElement):
         self.node = node
 
     @property
@@ -217,6 +217,28 @@ class EmbroideryElement(object):
         width = self.get_style("stroke-width", "1.0")
         width = convert_length(width)
         return width * self.stroke_scale
+
+    @property
+    @param('min_stitch_length_mm',
+           _('Minimum stitch length'),
+           tooltip=_('Overwrite global minimum stitch length setting. Shorter stitches than that will be removed.'),
+           type='float',
+           default=None,
+           sort_index=48)
+    @cache
+    def min_stitch_length(self):
+        return self.get_float_param("min_stitch_length_mm")
+
+    @property
+    @param('min_jump_stitch_length_mm',
+           _('Minimum jump stitch length'),
+           tooltip=_('Overwrite global minimum jump stitch length setting. Shorter distances to the next object will have no lock stitches.'),
+           type='float',
+           default=None,
+           sort_index=49)
+    @cache
+    def min_jump_stitch_length(self):
+        return self.get_float_param("min_jump_stitch_length_mm")
 
     @property
     @param('ties',
@@ -472,7 +494,7 @@ class EmbroideryElement(object):
 
         return lock_start, lock_end
 
-    def to_stitch_groups(self, last_patch):
+    def to_stitch_groups(self, last_stitch_group):
         raise NotImplementedError("%s must implement to_stitch_groups()" % self.__class__.__name__)
 
     @debug.time
@@ -535,6 +557,9 @@ class EmbroideryElement(object):
             gradient['styles'] = [(style['stop-color'], style['stop-opacity']) for style in self.gradient.stop_styles]
         return gradient
 
+    def _get_tartan_key_data(self):
+        return (self.node.get('inkstitch:tartan', None))
+
     def get_cache_key_data(self, previous_stitch):
         return []
 
@@ -550,6 +575,7 @@ class EmbroideryElement(object):
         cache_key_generator.update(self._get_patterns_cache_key_data())
         cache_key_generator.update(self._get_guides_cache_key_data())
         cache_key_generator.update(self.get_cache_key_data(previous_stitch))
+        cache_key_generator.update(self._get_tartan_key_data())
 
         cache_key = cache_key_generator.get_cache_key()
         debug.log(f"cache key for {self.node.get('id')} {self.node.get(INKSCAPE_LABEL)} {previous_stitch}: {cache_key}")
@@ -575,6 +601,10 @@ class EmbroideryElement(object):
                 if stitch_groups:
                     stitch_groups[-1].trim_after = self.has_command("trim") or self.trim_after
                     stitch_groups[-1].stop_after = self.has_command("stop") or self.stop_after
+
+                for stitch_group in stitch_groups:
+                    stitch_group.min_jump_stitch_length = self.min_jump_stitch_length
+                    stitch_group.set_minimum_stitch_length(self.min_stitch_length)
 
                 self._save_cached_stitch_groups(stitch_groups, previous_stitch)
 
