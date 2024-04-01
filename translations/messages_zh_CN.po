@@ -4899,19 +4899,19 @@ msgstr "刺绣"
 
 #: inx/inkstitch_embroider.inx:5
 msgid "Create a stitch file"
-msgstr ""
+msgstr "输出机器文件"
 
 #: inx/inkstitch_embroider.inx:6
 msgid "Save your embroidery file through | File > Save a Copy ... |"
-msgstr ""
+msgstr "通过 | 文件 > 保存副本 | 输出机器文件"
 
 #: inx/inkstitch_embroider.inx:7
 msgid "Choose from listed embroidery file formats and save."
-msgstr ""
+msgstr "从列出的绣花文件格式中选择一项并保存。"
 
 #: inx/inkstitch_embroider.inx:9
 msgid "Multiple file formats can be saved by choosing the zip file format."
-msgstr ""
+msgstr "选择zip文件格式可输出多种机器文件。"
 
 #: inx/inkstitch_fill_to_stroke.inx:3 inx/inkstitch_fill_to_stroke.inx:24
 msgid "Fill to Stroke"
