@@ -4,26 +4,30 @@
 # Licensed under the GNU GPL version 3.0 or later.  See the file LICENSE for details.
 
 import inkex
-from shapely import concave_hull
-from shapely.geometry import LineString, MultiPolygon
+from shapely.geometry import LineString, MultiPolygon, Polygon
 
 from ..i18n import _
 from ..svg import PIXELS_PER_MM
 from ..svg.tags import SVG_PATH_TAG
+from ..utils.smoothing import smooth_path
 from .base import InkstitchExtension
 
 
 class Outline(InkstitchExtension):
     def __init__(self, *args, **kwargs):
         InkstitchExtension.__init__(self, *args, **kwargs)
-        self.arg_parser.add_argument("-r", "--ratio", type=float, default=0.0, dest="ratio")
-        self.arg_parser.add_argument("-a", "--allow-holes", type=inkex.Boolean, default=False, dest="allow_holes")
-        self.arg_parser.add_argument("-b", "--buffer", type=float, default=0.0, dest="buffer")
+        self.arg_parser.add_argument("-b", "--buffer", type=float, default=0.001, dest="buffer")
+        self.arg_parser.add_argument("-s", "--smoothness", type=float, default=0.3, dest="smoothness")
+        self.arg_parser.add_argument("-t", "--threshold", type=float, default=10.0, dest="threshold")
 
     def effect(self):
         if not self.svg.selection:
             inkex.errormsg(_("Please select one or more shapes to convert to their outline."))
             return
+
+        self.threshold = self.options.threshold * PIXELS_PER_MM
+        self.shape_buffer = max(self.options.buffer * PIXELS_PER_MM, 0.001)
+        self.smoothness = self.options.smoothness * PIXELS_PER_MM
 
         for element in self.svg.selection:
             self.element_to_outline(element)
@@ -34,25 +38,20 @@ class Outline(InkstitchExtension):
                 self.element_to_outline(element)
             return
 
-        shape_buffer = max(self.options.buffer * PIXELS_PER_MM, 0.001)
         path = element.get_path()
         path = path.end_points
-        shape = LineString(path).buffer(shape_buffer)
-        hull = concave_hull(
-            shape,
-            ratio=self.options.ratio,
-            allow_holes=self.options.allow_holes
-        )
-        if isinstance(hull, LineString):
-            return
+        shape = LineString(path).buffer(self.shape_buffer)
 
-        if not isinstance(hull, MultiPolygon):
-            hull = MultiPolygon([hull])
+        interiors = []
+        for interior in shape.interiors:
+            if Polygon(interior).area < self.threshold:
+                continue
+            interior_path = smooth_path(interior.coords, self.smoothness)
+            if len(interior_path) > 2:
+                interiors.append(Polygon(interior_path))
+        outline = MultiPolygon([Polygon(smooth_path(shape.exterior.coords, self.smoothness))] + interiors)
 
         d = ''
-        for geom in hull.geoms:
+        for geom in outline.geoms:
             d += str(inkex.Path(geom.exterior.coords))
-            if self.options.allow_holes:
-                for interior in geom.interiors:
-                    d += str(inkex.Path(interior.coords))
         element.set('d', d)
