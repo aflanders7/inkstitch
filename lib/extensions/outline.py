@@ -3,7 +3,7 @@
 # Copyright (c) 2010 Authors
 # Licensed under the GNU GPL version 3.0 or later.  See the file LICENSE for details.
 
-import inkex
+from inkex import Path, errormsg
 from shapely.geometry import LineString, MultiPolygon, Polygon
 
 from ..i18n import _
@@ -22,7 +22,7 @@ class Outline(InkstitchExtension):
 
     def effect(self):
         if not self.svg.selection:
-            inkex.errormsg(_("Please select one or more shapes to convert to their outline."))
+            errormsg(_("Please select one or more shapes to convert to their outline."))
             return
 
         self.threshold = self.options.threshold * PIXELS_PER_MM
@@ -38,20 +38,22 @@ class Outline(InkstitchExtension):
                 self.element_to_outline(element)
             return
 
-        path = element.get_path()
-        path = path.end_points
-        shape = LineString(path).buffer(self.shape_buffer)
-
-        interiors = []
-        for interior in shape.interiors:
-            if Polygon(interior).area < self.threshold:
-                continue
-            interior_path = smooth_path(interior.coords, self.smoothness)
-            if len(interior_path) > 2:
-                interiors.append(Polygon(interior_path))
-        outline = MultiPolygon([Polygon(smooth_path(shape.exterior.coords, self.smoothness))] + interiors)
-
         d = ''
-        for geom in outline.geoms:
-            d += str(inkex.Path(geom.exterior.coords))
+        transform = element.composed_transform()
+        path = element.get_path().transform(transform).break_apart()
+        for subpath in path:
+            points = subpath.end_points
+            shape = LineString(points).buffer(self.shape_buffer)
+
+            interiors = []
+            for interior in shape.interiors:
+                if Polygon(interior).area < self.threshold:
+                    continue
+                interior_path = smooth_path(interior.coords, self.smoothness)
+                if len(interior_path) > 2:
+                    interiors.append(Polygon(interior_path))
+            outline = MultiPolygon([Polygon(smooth_path(shape.exterior.coords, self.smoothness))] + interiors)
+
+            for geom in outline.geoms:
+                d += str(Path(geom.exterior.coords).transform(-transform))
         element.set('d', d)
