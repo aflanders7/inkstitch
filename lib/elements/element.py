@@ -169,7 +169,7 @@ class EmbroideryElement(object):
         return self.node.specified_style()
 
     def get_style(self, style_name, default=None):
-        style = self._get_specified_style().get(style_name, default)
+        style = self._get_specified_style()(style_name) or default
         if style == 'none':
             style = None
         return style
