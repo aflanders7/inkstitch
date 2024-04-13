@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: inkstitch\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-04-01 01:10+0000\n"
-"PO-Revision-Date: 2024-04-01 01:11\n"
+"POT-Creation-Date: 2024-04-13 00:55+0000\n"
+"PO-Revision-Date: 2024-04-13 00:56\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-01 01:10+0000\n"
+"POT-Creation-Date: 2024-04-13 00:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgstr "Amitaclo small"
 #. description of font in fonts/amitaclo_small
 #: inkstitch-fonts-metadata.py:24
 msgid "This font is an altered version  of Amitaclo, to allow a greater scaling down. The use of both  thin thread (60) and thin needle (60) is mandatory.  parameters of this font allow to scale down the original Amitaclo font between 30% (for a 8 mm font ) and 55 % (for a 16mm font)."
-msgstr ""
+msgstr "Cette police est une version modifiée de Amitaclo pour permettre une réduction plus forte de la taille. L'usage de fil fin (60) et d'une aiguille fine (60) est obligatoire. Le paramétrage modifié de cette  police permet de réduire la police Amitaclo originelle entre 30% (pour une police de 8 mm) et 55% (pour une police de 16 mm)."
 
 #. name of font in fonts/apex_lake
 #: inkstitch-fonts-metadata.py:26
@@ -130,7 +130,7 @@ msgstr "Auberge small"
 #. description of font in fonts/auberge_small
 #: inkstitch-fonts-metadata.py:40
 msgid "This font is an altered version  of Auberge Marif, to allow a greater scaling down. The use of both thin thread (60) and thin needle (60) are mandatory. The altered embroidery parameters of this font allow to scale down the original Grand Hotel font between 25% (for a 9mm font ) and 55 % (for a 20 mm font). "
-msgstr ""
+msgstr "Cette police est une version modifiée d'Auberge Marif pour permettre une réduction plus forte de la taille. L'usage de fil fin (60) et d'une aiguille fine (60) est obligatoire. Le paramétrage modifié de cette  police permet de réduire la police Grand Hotel Marif originelle entre 25% (pour une police de 9 mm) et 55% (pour une police de 20 mm). "
 
 #. name of font in fonts/aventurina
 #: inkstitch-fonts-metadata.py:42
@@ -306,7 +306,7 @@ msgstr "Espresso tiny"
 #. description of font in fonts/espresso_tiny
 #: inkstitch-fonts-metadata.py:108
 msgid "This font is an altered version  of Espresso KOR, to allow a greater scaling down. The use of both  thin thread (60) and thin needle (60) is mandatory. The altered embroidery parameters of this font allow to scale down the original Espresso font between 25% (for a 5mm font ) and 55 % (for a 11mm font)."
-msgstr ""
+msgstr "Cette police est une version modifiée de Espresso KOR pour permettre une réduction plus forte de la taille. L'usage de fil fin (60) et d'une aiguille fine (60) est obligatoire. Le paramétrage modifié de cette  police permet de réduire la police Espresso KOR originelle entre 25% (pour une police de 5 mm) et 55% (pour une police de 11 mm)."
 
 #. name of font in fonts/excalibur_KOR
 #: inkstitch-fonts-metadata.py:110
@@ -326,7 +326,7 @@ msgstr "Fold Ink/Stitch"
 #. description of font in fonts/fold_inkstitch
 #: inkstitch-fonts-metadata.py:116
 msgid "Fold Ink/Stitch is a large triple and quintuple running stitches capital font of size 100 mm. It contains 40 glyphs including all numbers and the 26 capitals  A-Z. It can be reduced down to 80% and enlarged as much as you like"
-msgstr ""
+msgstr "Fold Ink/Stitch est une grande police de majuscules au point droit triple ou quintuple de 100 mm. Il y a 40 glyphes dont les chiffres et les 26 majuscules A-Z. Peut être réduite jusqu'à 80% et agrandie autant que vous le souhaitez."
 
 #. name of font in fonts/geneva_rounded
 #: inkstitch-fonts-metadata.py:118
@@ -356,7 +356,7 @@ msgstr "Glacial Tiny 60 AGS"
 #. description of font in fonts/glacial_tiny
 #: inkstitch-fonts-metadata.py:128
 msgid "Glacial is a very tiny font: at 100%,  M stands at 5.6mm. Thin thread (60 wt ) and thin needle (8/60) are mandatory. The glyphs cover many European languages. It can be reduced down to 40% and enlarged up to 150%."
-msgstr ""
+msgstr "Glacial est une toute toute petite police, le M majuscule mesure 5.6 mm de haut. Du fil fin (60 wt) et une aiguille fine (8/60) sont obligatoires. Les glyphes couvrent de nombreux langages européens. Elle peut être réduite jusqu'à 40% et élargie jusqu'à 150%."
 
 #. name of font in fonts/infinipicto
 #: inkstitch-fonts-metadata.py:130
@@ -1117,8 +1117,8 @@ msgid "Clone Object"
 msgstr "Cloner l'objet"
 
 #: lib/elements/clone.py:28
-msgid "There are one or more clone objects in this document.  Ink/Stitch can work with single clones, but you are limited to set a very few parameters. "
-msgstr "Ce document contient un ou plusieurs objets clonés.  Ink/Stitch peut fonctionner avec des clones uniques, mais vous êtes limité à la définition de quelques paramètres. "
+msgid "There are one or more clone objects in this document.  Ink/Stitch can work with clones, but you are limited to set a very few parameters. "
+msgstr ""
 
 #: lib/elements/clone.py:31
 msgid "If you want to convert the clone into a real element, follow these steps:"
@@ -1129,8 +1129,8 @@ msgid "* Select the clone"
 msgstr "* Sélectionner le clone"
 
 #: lib/elements/clone.py:33
-msgid "* Run: Edit > Clone > Unlink Clone (Alt+Shift+D)"
-msgstr "* Exécutez : Édition > Cloner > Délier le clone (Alt+Shift+D)"
+msgid "* Run: Extensions > Ink/Stitch > Edit > Unlink Clone"
+msgstr ""
 
 #: lib/elements/clone.py:44 inx/inkstitch_select_elements.inx:72
 #: inx/inkstitch_select_elements.inx:73
@@ -1272,12 +1272,7 @@ msgstr "Arrêter après"
 msgid "Add a STOP command after stitching this object."
 msgstr "Ajoute une commande STOP après avoir brodé cet objet."
 
-#: lib/elements/element.py:419
-#, python-format
-msgid "Object %(id)s has an empty 'd' attribute.  Please delete this object from your document."
-msgstr "L'objet %(id)s a un attribut 'd' vide. S’il vous plaît supprimer cet objet dans votre document."
-
-#: lib/elements/element.py:624
+#: lib/elements/element.py:621
 msgid "Please run Extensions > Ink/Stitch > Troubleshoot > Troubleshoot objects. This will show you the exact location of the problem."
 msgstr "Merci d'exécuter Extensions > Ink/Stitch > Résolution de problèmes > Dépistage de problèmes avec des objets. Ceci indiquera la position erronée."
 
@@ -1416,31 +1411,31 @@ msgstr "Aucune bande pour le rendu"
 
 #: lib/elements/fill_stitch.py:119
 msgid "Tartan fill: There is no active fill stripe to render"
-msgstr ""
+msgstr "Remplissage tartan : il n'y a pas de bande active pour le rendu"
 
 #: lib/elements/fill_stitch.py:121 lib/elements/fill_stitch.py:131
 msgid "Go to Extensions > Ink/Stitch > Fill Tools > Tartan and adjust stripe settings:"
-msgstr ""
+msgstr "Aller à Extensions > Ink/Stitch >Outils : Remplissage> Tartan et ajuster le paramétrage des bandes de couleurs:"
 
 #: lib/elements/fill_stitch.py:122
 msgid "* Check if stripes are active"
-msgstr ""
+msgstr "Vérifier si les bandes sont actives"
 
 #: lib/elements/fill_stitch.py:123
 msgid "* Check the minimum stripe width setting and the scale factor"
-msgstr ""
+msgstr "Vérifier la largeur minimum de bande et le facteur d'échelle"
 
 #: lib/elements/fill_stitch.py:128
 msgid "No customized pattern"
-msgstr ""
+msgstr "Pas de motif personnalisé"
 
 #: lib/elements/fill_stitch.py:129
 msgid "Tartan fill: Using default pattern"
-msgstr ""
+msgstr "Remplissage tartan : utilisation du motif par défaut"
 
 #: lib/elements/fill_stitch.py:132
 msgid "* Customize your pattern"
-msgstr ""
+msgstr "Personnaliser votre motif"
 
 #: lib/elements/fill_stitch.py:137
 msgid "This shape is invalid"
@@ -1598,7 +1593,7 @@ msgstr "L’angle augmente dans un sens anti-horaire.  0 est horizontal.  Les an
 
 #: lib/elements/fill_stitch.py:293 lib/gui/tartan/embroidery_panel.py:36
 msgid "Relative to the tartan stripe direction."
-msgstr ""
+msgstr "Relativement à la direction des bandes du tartan."
 
 #: lib/elements/fill_stitch.py:305
 msgid "Maximum fill stitch length"
@@ -1650,11 +1645,11 @@ msgstr "L’option intervertir peut vous aider avec le routage de votre chemin d
 
 #: lib/elements/fill_stitch.py:402
 msgid "Reverse fill"
-msgstr ""
+msgstr "Inverser le remplissage"
 
 #: lib/elements/fill_stitch.py:403
 msgid "Reverses fill path."
-msgstr ""
+msgstr "Inverse le chemin de remplissage."
 
 #: lib/elements/fill_stitch.py:414
 msgid "Stop at ending point"
@@ -1688,7 +1683,7 @@ msgstr "Tolérance du point droit"
 msgid "Determines how hard Ink/Stitch tries to avoid stitching outside the shape.Lower numbers are less likely to stitch outside the shape but require more stitches."
 msgstr "Détermine la force avec laquelle Ink/Stitch essaie d'éviter de broder en dehors de la forme. Une valeur basse rend moins susceptible de broder en dehors de la forme, mais nécessite plus de points."
 
-#: lib/elements/fill_stitch.py:470 lib/elements/satin_column.py:403
+#: lib/elements/fill_stitch.py:470 lib/elements/satin_column.py:439
 #: lib/elements/stroke.py:83
 msgid "Repeats"
 msgstr "Répétitions"
@@ -1731,15 +1726,15 @@ msgstr "Nombre de rangées par fil du tartan"
 
 #: lib/elements/fill_stitch.py:526 lib/gui/tartan/embroidery_panel.py:44
 msgid "Consecutive rows of the same color"
-msgstr ""
+msgstr "Nombre de rangées consécutives de la même couleur"
 
 #: lib/elements/fill_stitch.py:537
 msgid "Herringbone width"
-msgstr ""
+msgstr "Largeur de chevron"
 
 #: lib/elements/fill_stitch.py:538
 msgid "Defines width of a herringbone pattern. Use 0 for regular rows."
-msgstr ""
+msgstr "Défini la largeur d'un motif de chevrons. Utiliser 0 pour des bandes normales."
 
 #: lib/elements/fill_stitch.py:559 lib/elements/fill_stitch.py:568
 #: lib/elements/fill_stitch.py:595 lib/elements/fill_stitch.py:606
@@ -1783,11 +1778,11 @@ msgstr "défaut : égal à longueur max des points de remplissage"
 msgid "Shrink the shape before doing underlay, to prevent underlay from showing around the outside of the fill."
 msgstr "Rétrécit la forme avant de faire la sous-couche, pour empêcher que la sous-couche se montre en dehors du remplissage."
 
-#: lib/elements/fill_stitch.py:649 lib/elements/satin_column.py:484
+#: lib/elements/fill_stitch.py:649 lib/elements/satin_column.py:520
 msgid "Random seed"
 msgstr "Graine aléatoire"
 
-#: lib/elements/fill_stitch.py:650 lib/elements/satin_column.py:485
+#: lib/elements/fill_stitch.py:650 lib/elements/satin_column.py:521
 msgid "Use a specific seed for randomized attributes. Uses the element ID if empty."
 msgstr "Utiliser cette graine aléatoire pour le calcul des attributs. Si vide, utilise l'identificateur de l'élément."
 
@@ -1987,8 +1982,8 @@ msgid "shorten stitch across rails at most this percent. Two values separated by
 msgstr "réduire la largeur du satin au plus de ce pourcentage. Deux valeurs séparées par un espace peuvent être utilisées pour un effet asymétrique."
 
 #: lib/elements/satin_column.py:121 lib/elements/satin_column.py:131
-#: lib/elements/satin_column.py:254 lib/elements/satin_column.py:382
-#: lib/elements/satin_column.py:462
+#: lib/elements/satin_column.py:254 lib/elements/satin_column.py:400
+#: lib/elements/satin_column.py:498
 msgid "% (each side)"
 msgstr "% (de chaque côté)"
 
@@ -2025,7 +2020,7 @@ msgstr "Décalés"
 msgid "Split Method"
 msgstr "Méthode de découpage"
 
-#: lib/elements/satin_column.py:161 lib/elements/satin_column.py:473
+#: lib/elements/satin_column.py:161 lib/elements/satin_column.py:509
 msgid "Maximum stitch length"
 msgstr "Longueur maximale du point"
 
@@ -2097,8 +2092,8 @@ msgstr "Compensation d'étirement"
 msgid "Satin stitches pull the fabric together, resulting in a column narrower than you draw in Inkscape. This setting expands each pair of needle penetrations outward from the center of the satin column by a fixed length. Two values separated by a space may be used for an aysmmetric effect."
 msgstr "Les points satin resserrent le tissu, ce qui entraîne une colonne plus étroite que celle que vous dessinez dans Inkscape. Ce paramètre étend le point depuis le centre vers l’extérieur de la colonne satinée. Deux valeurs séparées par un espace peuvent être utilisées pour un effet asymétrique."
 
-#: lib/elements/satin_column.py:270 lib/elements/satin_column.py:367
-#: lib/elements/satin_column.py:442
+#: lib/elements/satin_column.py:270 lib/elements/satin_column.py:385
+#: lib/elements/satin_column.py:478
 msgid "mm (each side)"
 msgstr "mm (de chaque côté)"
 
@@ -2143,83 +2138,94 @@ msgid "Contour underlay"
 msgstr "Sous-couche de contour"
 
 #: lib/elements/satin_column.py:351 lib/elements/satin_column.py:358
-#: lib/elements/satin_column.py:366 lib/elements/satin_column.py:381
+#: lib/elements/satin_column.py:373 lib/elements/satin_column.py:384
+#: lib/elements/satin_column.py:399
 msgid "Contour Underlay"
 msgstr "Sous-couche de Contour"
 
-#: lib/elements/satin_column.py:358 lib/elements/satin_column.py:397
+#: lib/elements/satin_column.py:358 lib/elements/satin_column.py:415
 msgid "Stitch length"
 msgstr "Longueur de point"
 
-#: lib/elements/satin_column.py:364
+#: lib/elements/satin_column.py:365 lib/elements/satin_column.py:422
+#: lib/elements/stroke.py:121
+msgid "Stitch tolerance"
+msgstr "Tolérance"
+
+#: lib/elements/satin_column.py:366 lib/elements/satin_column.py:423
+msgid "All stitches must be within this distance from the path. A lower tolerance means stitches will be closer together. A higher tolerance means sharp corners may be rounded. Defaults to stitch length."
+msgstr "Tous les points doivent rester au plus à cette distance du chemin. Une tolérance plus faible signifie que les points seront plus rapprochés. Une tolérance plus élevée signifie que les angles vifs peuvent être arrondis. Prend par défaut la valeur de la longueur du point."
+
+#: lib/elements/satin_column.py:382
 msgid "Inset distance (fixed)"
 msgstr "Décalage (fixe)"
 
-#: lib/elements/satin_column.py:365
+#: lib/elements/satin_column.py:383
 msgid "Shrink the outline by a fixed length, to prevent the underlay from showing around the outside of the satin column."
 msgstr "Rétrécir le contour, pour empêcher que la sous-couche ne se voit autour de la colonne satin."
 
-#: lib/elements/satin_column.py:378
+#: lib/elements/satin_column.py:396
 msgid "Inset distance (proportional)"
 msgstr "Décalage (proportionnel)"
 
-#: lib/elements/satin_column.py:379
+#: lib/elements/satin_column.py:397
 msgid "Shrink the outline by a proportion of the column width, to prevent the underlay from showing around the outside of the satin column."
 msgstr "Rétrécir le contour proportionnellement à la largeur de la colonne pour empêcher que la sous-couche ne se voit autour de la colonne satin."
 
-#: lib/elements/satin_column.py:390
+#: lib/elements/satin_column.py:408
 msgid "Center-walk underlay"
 msgstr "Sous-couche centrale"
 
-#: lib/elements/satin_column.py:390 lib/elements/satin_column.py:397
-#: lib/elements/satin_column.py:406 lib/elements/satin_column.py:416
+#: lib/elements/satin_column.py:408 lib/elements/satin_column.py:415
+#: lib/elements/satin_column.py:430 lib/elements/satin_column.py:442
+#: lib/elements/satin_column.py:452
 msgid "Center-Walk Underlay"
 msgstr "Sous-couche centrale"
 
-#: lib/elements/satin_column.py:404
+#: lib/elements/satin_column.py:440
 msgid "For an odd number of repeats, this will reverse the direction the satin column is stitched, causing stitching to both begin and end at the start point."
 msgstr "Pour un nombre impair de répétitions, ceci renversa la direction de broderie de la colonne satin, la broderie commençant et terminant au point de départ."
 
-#: lib/elements/satin_column.py:414 lib/gui/tartan/customize_panel.py:39
+#: lib/elements/satin_column.py:450 lib/gui/tartan/customize_panel.py:39
 msgid "Position"
 msgstr "Position"
 
-#: lib/elements/satin_column.py:415
+#: lib/elements/satin_column.py:451
 #, python-format
 msgid "Position of underlay from between the rails. 0% is along the first rail, 50% is centered, 100% is along the second rail."
 msgstr "Position de la sous-couche entre les rails. A 0% la sous couche est le long du premier rail, à 50% centrée, à 100% le long du second rail."
 
-#: lib/elements/satin_column.py:423
+#: lib/elements/satin_column.py:459
 msgid "Zig-zag underlay"
 msgstr "Sous-couche Zig-Zag"
 
-#: lib/elements/satin_column.py:423 lib/elements/satin_column.py:432
-#: lib/elements/satin_column.py:443 lib/elements/satin_column.py:463
-#: lib/elements/satin_column.py:476
+#: lib/elements/satin_column.py:459 lib/elements/satin_column.py:468
+#: lib/elements/satin_column.py:479 lib/elements/satin_column.py:499
+#: lib/elements/satin_column.py:512
 msgid "Zig-zag Underlay"
 msgstr "Sous-couche Zig-Zag"
 
-#: lib/elements/satin_column.py:429
+#: lib/elements/satin_column.py:465
 msgid "Zig-Zag spacing (peak-to-peak)"
 msgstr "Espacement Zig-Zag (crête à crête)"
 
-#: lib/elements/satin_column.py:430
+#: lib/elements/satin_column.py:466
 msgid "Distance between peaks of the zig-zags."
 msgstr "Distance entre les crêtes des zig-zags."
 
-#: lib/elements/satin_column.py:440
+#: lib/elements/satin_column.py:476
 msgid "Inset amount (fixed)"
 msgstr "Décalage (fixe)"
 
-#: lib/elements/satin_column.py:441 lib/elements/satin_column.py:461
+#: lib/elements/satin_column.py:477 lib/elements/satin_column.py:497
 msgid "default: half of contour underlay inset"
 msgstr "par défaut: la moitié du décalage du contour de la sous-couche"
 
-#: lib/elements/satin_column.py:460
+#: lib/elements/satin_column.py:496
 msgid "Inset amount (proportional)"
 msgstr "Décalage (proportionnel)"
 
-#: lib/elements/satin_column.py:474
+#: lib/elements/satin_column.py:510
 msgid "Split stitch if distance of maximum stitch length is exceeded"
 msgstr "Découper le point en plusieurs si sa longueur dépasse la longueur maximale définie"
 
@@ -2262,10 +2268,6 @@ msgstr "Point manuel"
 #: lib/elements/stroke.py:110
 msgid "Length of stitches. Stitches can be shorter according to the stitch tolerance setting."
 msgstr "Longueur des points. Selon la valeur de la tolérance, il se peut que les points soient plus court."
-
-#: lib/elements/stroke.py:121
-msgid "Stitch tolerance"
-msgstr "Tolérance"
 
 #: lib/elements/stroke.py:122
 msgid "All stitches must be within this distance from the path.  A lower tolerance means stitches will be closer together.  A higher tolerance means sharp corners may be rounded."
@@ -2890,11 +2892,11 @@ msgstr "Impossible d'appliquer l'effet de chemin satin à une colonne satin. Mer
 
 #: lib/extensions/tartan.py:58
 msgid "To create a tartan pattern please select at least one element with a fill color."
-msgstr ""
+msgstr "Pour créer un motif de tartan, sélectionner au moins un élément avec une couleur de remplissage."
 
 #: lib/extensions/tartan.py:64
 msgid "Ink/Stitch Tartan"
-msgstr ""
+msgstr "Tartan Ink/Stitch"
 
 #: lib/extensions/test_swatches.py:22
 msgid "Please select one or more elements."
@@ -2960,6 +2962,10 @@ msgstr "Solutions possibles"
 #: lib/extensions/troubleshoot.py:193
 msgid "It is possible, that one object contains more than one error, yet there will be only one pointer per object.  Run this function again, when further errors occur.  Remove pointers by deleting the layer named \"Troubleshoot\" through the objects panel (Object -> Objects...)."
 msgstr "Il est possible qu'un objet contienne plus d'une erreur, même s'il n'y a qu'un conseil par objet. Relancer cette fonction quand il y a plus d'erreurs. Enlever les conseils en supprimant le calque \"Résolution de problèmes\" dans le dialogue objets (Objet -> Objets...)."
+
+#: lib/extensions/unlink_clone.py:27
+msgid "Please select one or more clones to unlink."
+msgstr ""
 
 #: lib/extensions/update_svg.py:23
 msgid "Please select at least one element to update. This extension is designed to help you update copy and pasted elements from old designs."
@@ -3217,25 +3223,25 @@ msgstr "Le préréglage \"%s\" existe déjà. Veuillez utiliser un autre nom ou 
 
 #. #-#-#-#-#  messages-babel.po (PROJECT VERSION)  #-#-#-#-#
 #. command label at bottom of simulator window
-#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:147
+#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:136
 #: inx/inkstitch_output_GCODE.inx:29
 msgid "STITCH"
 msgstr "BRODER"
 
-#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:150
+#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:139
 msgid "JUMP"
 msgstr "SAUT"
 
-#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:153
+#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:142
 msgid "TRIM"
 msgstr "COUPURE"
 
-#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:156
+#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:145
 #: inx/inkstitch_output_GCODE.inx:33
 msgid "STOP"
 msgstr "STOP"
 
-#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:159
+#: lib/gui/simulator.py:22 electron/src/renderer/assets/js/simulator.js:148
 #: inx/inkstitch_output_GCODE.inx:31
 msgid "COLOR CHANGE"
 msgstr "CHANGEMENT COULEUR"
@@ -3328,107 +3334,107 @@ msgstr "Simulation de broderie"
 
 #: lib/gui/tartan/code_panel.py:24
 msgid "1 Tartan thread equals (mm)"
-msgstr ""
+msgstr "1 fil de Tartan vaut (mm)"
 
 #: lib/gui/tartan/code_panel.py:29 lib/gui/tartan/code_panel.py:30
 msgid "Used only for Threadcount code (The Scottish Register of Tartans)"
-msgstr ""
+msgstr "Utilisé uniquement pour le code Threadcount (Registre Écossais des Tartans)"
 
 #: lib/gui/tartan/customize_panel.py:31
 msgid "Pattern Settings"
-msgstr ""
+msgstr "Paramétrage du motif"
 
 #: lib/gui/tartan/customize_panel.py:33
 msgid "Symmetrical / reflective sett"
-msgstr ""
+msgstr "Motif symétrique /reflexion"
 
 #: lib/gui/tartan/customize_panel.py:34
 msgid "Disabled: asymmetrical / repeating sett"
-msgstr ""
+msgstr "Décoché : motif asymétrique/répétition"
 
 #: lib/gui/tartan/customize_panel.py:36
 msgid "Equal threadcount for warp and weft"
-msgstr ""
+msgstr "Même nombre de fils pour la chaîne et la trame"
 
 #: lib/gui/tartan/customize_panel.py:47
 msgid "Scale (%)"
-msgstr ""
+msgstr "Echelle (%)"
 
 #: lib/gui/tartan/customize_panel.py:51
 msgid "Offset X (mm)"
-msgstr ""
+msgstr "Décalage X (mm)"
 
 #: lib/gui/tartan/customize_panel.py:55
 msgid "Offset Y (mm)"
-msgstr ""
+msgstr "Décalage Y (mm)"
 
 #: lib/gui/tartan/customize_panel.py:57
 msgid "Stripes"
-msgstr ""
+msgstr "Bandes"
 
 #: lib/gui/tartan/customize_panel.py:59
 msgid "Link colors"
-msgstr ""
+msgstr "Lier les couleurs"
 
 #: lib/gui/tartan/customize_panel.py:60
 msgid "When enabled update all equal colors simultaneously."
-msgstr ""
+msgstr "Si coché toutes les couleurs identiques sont mises à jour simultanément."
 
 #: lib/gui/tartan/customize_panel.py:61
 msgid "Warp"
-msgstr ""
+msgstr "Chaîne"
 
 #: lib/gui/tartan/customize_panel.py:63
 msgid "Weft"
-msgstr ""
+msgstr "Trame"
 
 #: lib/gui/tartan/customize_panel.py:120
 msgid "Drag and drop to adjust position."
-msgstr ""
+msgstr "Glissez Déposez pour ajuster la position."
 
 #: lib/gui/tartan/customize_panel.py:125
 msgid "Stitch this stripe"
-msgstr ""
+msgstr "Broder cette bande"
 
 #: lib/gui/tartan/customize_panel.py:135
 msgid "Select stripe color"
-msgstr ""
+msgstr "Selectionne la couleur de la bande"
 
 #: lib/gui/tartan/customize_panel.py:140
 msgid "Set stripe width (mm)"
-msgstr ""
+msgstr "Choisir la largeur de la bande (mm)"
 
 #: lib/gui/tartan/customize_panel.py:144
 msgid "Remove stripe"
-msgstr ""
+msgstr "Supprimer la bande"
 
 #: lib/gui/tartan/embroidery_panel.py:25
 msgid "Embroidery settings can be refined in the params dialog."
-msgstr ""
+msgstr "Les paramètres de broderie peuvent être précisés dans le dialogue de paramétrage."
 
 #: lib/gui/tartan/embroidery_panel.py:49
 msgid "Row spacing (mm)"
-msgstr ""
+msgstr "Espacement entre rangées de points (mm)"
 
 #: lib/gui/tartan/embroidery_panel.py:59
 msgid "Herringbone width (mm)"
-msgstr ""
+msgstr "Largeur des chevrons (mm)"
 
 #: lib/gui/tartan/embroidery_panel.py:65 lib/gui/tartan/embroidery_panel.py:102
 msgid "Bean stitch repeats"
-msgstr ""
+msgstr "Nombre de répétitions du point multiple"
 
 #: lib/gui/tartan/embroidery_panel.py:70
 msgid "Stitch type"
-msgstr ""
+msgstr "Type de point"
 
 #: lib/gui/tartan/embroidery_panel.py:83
 msgid "Stitch angle (warp)"
-msgstr ""
+msgstr "Angle des points (chaîne)"
 
 #: lib/gui/tartan/embroidery_panel.py:88
 msgid "Stitch angle (weft)"
-msgstr ""
+msgstr "Angle des points (trame)"
 
 #: lib/gui/tartan/embroidery_panel.py:93
 msgid "Minimum stripe width for fills"
@@ -3436,35 +3442,35 @@ msgstr "Largeur minimum de bande pour le remplissage"
 
 #: lib/gui/tartan/embroidery_panel.py:97
 msgid "Stripes smaller than this will be stitched as a running stitch"
-msgstr ""
+msgstr "Les bandes plus étroites que cela seront brodées comme des points droits"
 
 #: lib/gui/tartan/embroidery_panel.py:195
 msgid "Embroidery Element"
-msgstr ""
+msgstr "Element de broderie"
 
 #: lib/gui/tartan/embroidery_panel.py:196
 msgid "SVG Elements"
-msgstr ""
+msgstr "Elements SVG"
 
 #: lib/gui/tartan/embroidery_panel.py:201
 msgid "AutoFill"
-msgstr ""
+msgstr "Remplissage automatique"
 
 #: lib/gui/tartan/help_panel.py:19
 msgid "This extension fills shapes with a tartan (or tartan like) pattern."
-msgstr ""
+msgstr "Cette extension remplit les formes avec un motif semblable à du tartan."
 
 #: lib/gui/tartan/help_panel.py:33 lib/gui/tartan/help_panel.py:34
 msgid "https://inkstitch.org/docs/stitches/tartan-fill"
-msgstr ""
+msgstr "https://inkstitch.org/fr/docs/stitches/tartan-fill"
 
 #: lib/gui/tartan/main_panel.py:55
 msgid "Customize"
-msgstr ""
+msgstr "Personnaliser"
 
 #: lib/gui/tartan/main_panel.py:59
 msgid "Palette Code"
-msgstr ""
+msgstr "Code de la palette"
 
 #: lib/gui/tartan/main_panel.py:62
 msgid "Embroidery Settings"
@@ -4900,6 +4906,7 @@ msgstr "Dupliquer les paramètres"
 #: inx/inkstitch_select_elements.inx:101
 #: inx/inkstitch_selection_to_guide_line.inx:10
 #: inx/inkstitch_selection_to_pattern.inx:10 inx/inkstitch_test_swatches.inx:10
+#: inx/inkstitch_unlink_clone.inx:11
 msgid "Edit"
 msgstr "Édition"
 
@@ -6624,6 +6631,14 @@ msgstr "Taille du pointeur (mm)"
 #: inx/inkstitch_troubleshoot.inx:7
 msgid "Font size (mm)"
 msgstr "Taille de la fonte (mm)"
+
+#: inx/inkstitch_unlink_clone.inx:3
+msgid "Unlink Clone"
+msgstr ""
+
+#: inx/inkstitch_unlink_clone.inx:6
+msgid "Recursive"
+msgstr ""
 
 #: inx/inkstitch_update_svg.inx:3
 msgid "Update inkstitch svg"
