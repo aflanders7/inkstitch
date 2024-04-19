@@ -1478,7 +1478,7 @@ msgstr "蜿蜒填充"
 
 #: lib/elements/fill_stitch.py:158
 msgid "Tartan Fill"
-msgstr ""
+msgstr "苏格兰格纹"
 
 #: lib/elements/fill_stitch.py:159 lib/gui/tartan/embroidery_panel.py:202
 #: inx/inkstitch_select_elements.inx:60
@@ -1620,11 +1620,11 @@ msgstr "增减底部针迹行距。"
 
 #: lib/elements/fill_stitch.py:356
 msgid "Stagger rows this many times before repeating"
-msgstr "针迹偏移"
+msgstr "每行针迹偏移"
 
 #: lib/elements/fill_stitch.py:357 lib/elements/satin_column.py:203
 msgid "Length of the cycle by which successive stitch rows are staggered. Fractional values are allowed and can have less visible diagonals than integer values."
-msgstr ""
+msgstr "连续针迹中每行的偏移长度。允许填写小数，且小数比整数有更少不可见对角线。"
 
 #: lib/elements/fill_stitch.py:373 lib/elements/fill_stitch.py:625
 msgid "Skip last stitch in each row"
@@ -1947,7 +1947,7 @@ msgstr ""
 #: lib/elements/satin_column.py:91 lib/elements/satin_column.py:101
 #: inx/inkstitch_select_elements.inx:30
 msgid "Satin Column"
-msgstr ""
+msgstr "平包针"
 
 #: lib/elements/satin_column.py:97
 msgid "Custom satin column"
@@ -1955,15 +1955,15 @@ msgstr "定制缎面柱"
 
 #: lib/elements/satin_column.py:102
 msgid "\"E\" Stitch"
-msgstr ""
+msgstr "E字型针"
 
 #: lib/elements/satin_column.py:103
 msgid "\"S\" Stitch"
-msgstr ""
+msgstr "正方形"
 
 #: lib/elements/satin_column.py:104 lib/stitch_plan/lock_stitch.py:211
 msgid "Zig-zag"
-msgstr ""
+msgstr "锯齿型针"
 
 #: lib/elements/satin_column.py:108 lib/elements/stroke.py:73
 #: inx/inkstitch_break_apart.inx:17
@@ -4725,11 +4725,11 @@ msgstr "命令"
 
 #: inx/inkstitch_convert_to_satin.inx:3
 msgid "Convert Line to Satin"
-msgstr ""
+msgstr "描边转缎面柱"
 
 #: inx/inkstitch_convert_to_stroke.inx:3
 msgid "Convert Satin to Stroke"
-msgstr ""
+msgstr "平包针转平针"
 
 #: inx/inkstitch_convert_to_stroke.inx:6
 msgid "Converts a satin column into a running stitch."
@@ -4799,7 +4799,7 @@ msgstr ""
 #: inx/inkstitch_cutwork_segmentation.inx:40
 #: inx/inkstitch_fill_to_stroke.inx:16
 msgid "Keep original"
-msgstr "保持原创"
+msgstr "保持原样"
 
 #: inx/inkstitch_cutwork_segmentation.inx:43
 msgid "This extension separates a path depending on the angle."
@@ -4902,23 +4902,23 @@ msgstr "编辑"
 
 #: inx/inkstitch_embroider.inx:3
 msgid "Embroider"
-msgstr "导出机器文件"
+msgstr "输出机器文件"
 
 #: inx/inkstitch_embroider.inx:5
 msgid "Create a stitch file"
-msgstr ""
+msgstr "输出机器文件"
 
 #: inx/inkstitch_embroider.inx:6
 msgid "Save your embroidery file through | File > Save a Copy ... |"
-msgstr ""
+msgstr "通过 | 文件 > 保存副本 ... | 输出机器文件"
 
 #: inx/inkstitch_embroider.inx:7
 msgid "Choose from listed embroidery file formats and save."
-msgstr ""
+msgstr "在下拉列表中选择合适的刺绣机器文件格式进行保存。"
 
 #: inx/inkstitch_embroider.inx:9
 msgid "Multiple file formats can be saved by choosing the zip file format."
-msgstr ""
+msgstr "选择zip文件格式可保存多种格式机器文件。"
 
 #: inx/inkstitch_fill_to_stroke.inx:3 inx/inkstitch_fill_to_stroke.inx:24
 msgid "Fill to Stroke"
@@ -5615,7 +5615,7 @@ msgstr ""
 
 #: inx/inkstitch_jump_to_stroke.inx:3
 msgid "Jump Stitch to Stroke"
-msgstr ""
+msgstr "跳针转平针"
 
 #: inx/inkstitch_jump_to_stroke.inx:17
 msgid "Convert jumps not shorter than (mm)"
@@ -6604,7 +6604,7 @@ msgstr ""
 
 #: inx/inkstitch_tartan.inx:3
 msgid "Tartan"
-msgstr ""
+msgstr "苏格兰格纹"
 
 #: inx/inkstitch_test_swatches.inx:3
 msgid "Generate Test Swatches from Selection"
