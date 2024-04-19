@@ -1155,7 +1155,7 @@ msgstr ""
 #: lib/elements/element.py:223 lib/gui/preferences.py:59
 #: lib/gui/preferences.py:106
 msgid "Minimum stitch length"
-msgstr "最小针迹长度"
+msgstr "最小针距"
 
 #: lib/elements/element.py:224
 msgid "Overwrite global minimum stitch length setting. Shorter stitches than that will be removed."
@@ -1450,7 +1450,7 @@ msgstr "填针"
 
 #: lib/elements/fill_stitch.py:148
 msgid "Automatically routed fill stitching"
-msgstr "自动布线填针"
+msgstr "优化填针布线"
 
 #: lib/elements/fill_stitch.py:152
 msgid "Auto Fill"
@@ -1596,7 +1596,7 @@ msgstr ""
 
 #: lib/elements/fill_stitch.py:305
 msgid "Maximum fill stitch length"
-msgstr "最大针迹长度"
+msgstr "最大针距"
 
 #: lib/elements/fill_stitch.py:306
 msgid "The length of each stitch in a row.  Shorter stitch may be used at the start or end of a row."
@@ -1668,7 +1668,7 @@ msgstr ""
 
 #: lib/elements/fill_stitch.py:440 lib/elements/stroke.py:109
 msgid "Running stitch length"
-msgstr "描边针迹长度"
+msgstr "描边针距"
 
 #: lib/elements/fill_stitch.py:441
 msgid "Length of stitches around the outline of the fill region used when moving from section to section. Also used for meander and circular fill."
@@ -1703,7 +1703,7 @@ msgstr ""
 #: lib/elements/fill_stitch.py:498 lib/elements/satin_column.py:238
 #: lib/elements/stroke.py:149
 msgid "Zig-zag spacing (peak-to-peak)"
-msgstr ""
+msgstr "锯齿间隔(峰到峰)"
 
 #: lib/elements/fill_stitch.py:499 lib/elements/stroke.py:150
 msgid "Length of stitches in zig-zag mode."
@@ -1765,7 +1765,7 @@ msgstr "默认值：3x 填充行间距"
 #: lib/elements/fill_stitch.py:603 lib/elements/stroke.py:135
 #: lib/extensions/element_info.py:125 lib/extensions/element_info.py:181
 msgid "Max stitch length"
-msgstr "针迹最大长度"
+msgstr "最大针距"
 
 #: lib/elements/fill_stitch.py:604
 msgid "default: equal to fill max stitch length"
@@ -1777,11 +1777,11 @@ msgstr "收缩打底范围避免线迹外露。"
 
 #: lib/elements/fill_stitch.py:649 lib/elements/satin_column.py:520
 msgid "Random seed"
-msgstr ""
+msgstr "随机种子"
 
 #: lib/elements/fill_stitch.py:650 lib/elements/satin_column.py:521
 msgid "Use a specific seed for randomized attributes. Uses the element ID if empty."
-msgstr ""
+msgstr "指定随机属性使用的种子。如果为空，则使用元素ID。"
 
 #: lib/elements/image.py:13
 msgid "Image"
@@ -2142,7 +2142,7 @@ msgstr ""
 
 #: lib/elements/satin_column.py:358 lib/elements/satin_column.py:415
 msgid "Stitch length"
-msgstr ""
+msgstr "针距"
 
 #: lib/elements/satin_column.py:365 lib/elements/satin_column.py:422
 #: lib/elements/stroke.py:121
@@ -2177,7 +2177,7 @@ msgstr ""
 #: lib/elements/satin_column.py:430 lib/elements/satin_column.py:442
 #: lib/elements/satin_column.py:452
 msgid "Center-Walk Underlay"
-msgstr ""
+msgstr "中线打底"
 
 #: lib/elements/satin_column.py:440
 msgid "For an odd number of repeats, this will reverse the direction the satin column is stitched, causing stitching to both begin and end at the start point."
@@ -2185,7 +2185,7 @@ msgstr ""
 
 #: lib/elements/satin_column.py:450 lib/gui/tartan/customize_panel.py:39
 msgid "Position"
-msgstr ""
+msgstr "位置"
 
 #: lib/elements/satin_column.py:451
 #, python-format
@@ -2194,13 +2194,13 @@ msgstr ""
 
 #: lib/elements/satin_column.py:459
 msgid "Zig-zag underlay"
-msgstr ""
+msgstr "锯齿打底"
 
 #: lib/elements/satin_column.py:459 lib/elements/satin_column.py:468
 #: lib/elements/satin_column.py:479 lib/elements/satin_column.py:499
 #: lib/elements/satin_column.py:512
 msgid "Zig-zag Underlay"
-msgstr ""
+msgstr "锯齿打底"
 
 #: lib/elements/satin_column.py:465
 msgid "Zig-Zag spacing (peak-to-peak)"
@@ -3697,7 +3697,7 @@ msgstr ""
 
 #: print/templates/color_swatch.html:23 print/templates/color_swatch.html:44
 msgid "# trims"
-msgstr ""
+msgstr "剪线"
 
 #: print/templates/color_swatch.html:24 print/templates/color_swatch.html:45
 #: print/templates/operator_detailedview.html:68
@@ -4588,7 +4588,7 @@ msgstr ""
 
 #: inx/inkstitch_auto_run.inx:3 inx/inkstitch_auto_run.inx:24
 msgid "Auto-Route Running Stitch"
-msgstr ""
+msgstr "优化平针布线"
 
 #: inx/inkstitch_auto_run.inx:10 inx/inkstitch_convert_to_stroke.inx:13
 #: inx/inkstitch_fill_to_stroke.inx:10 inx/inkstitch_jump_to_stroke.inx:10
@@ -4598,7 +4598,7 @@ msgstr "工具：轮廓线"
 
 #: inx/inkstitch_auto_run.inx:15
 msgid "Auto-Route Running Stitch Options"
-msgstr ""
+msgstr "优化平针布线选项"
 
 #: inx/inkstitch_auto_run.inx:17
 msgid "Add nodes at intersections"
@@ -4606,11 +4606,11 @@ msgstr ""
 
 #: inx/inkstitch_auto_run.inx:19
 msgid "Preserve order of running stitches"
-msgstr ""
+msgstr "保持平针顺序"
 
 #: inx/inkstitch_auto_run.inx:21 inx/inkstitch_auto_satin.inx:5
 msgid "Trim jump stitches"
-msgstr ""
+msgstr "跳针前剪线"
 
 #: inx/inkstitch_auto_run.inx:25
 msgid "Add nodes at intersections:"
@@ -4638,7 +4638,7 @@ msgstr ""
 
 #: inx/inkstitch_auto_satin.inx:3
 msgid "Auto-Route Satin Columns"
-msgstr ""
+msgstr "优化锻柱布线"
 
 #: inx/inkstitch_auto_satin.inx:6
 msgid "Preserve order of satin columns"
@@ -4649,7 +4649,7 @@ msgstr ""
 #: inx/inkstitch_stroke_to_lpe_satin.inx:40
 #: inx/inkstitch_zigzag_line_to_satin.inx:36
 msgid "Tools: Satin"
-msgstr "工具：平包针"
+msgstr "工具：缎面柱"
 
 #: inx/inkstitch_break_apart.inx:3
 msgid "Break Apart Fill Objects"
@@ -4725,11 +4725,11 @@ msgstr "命令"
 
 #: inx/inkstitch_convert_to_satin.inx:3
 msgid "Convert Line to Satin"
-msgstr "描边转缎面柱"
+msgstr "描边线段转缎面柱"
 
 #: inx/inkstitch_convert_to_stroke.inx:3
 msgid "Convert Satin to Stroke"
-msgstr "平包针转平针"
+msgstr "缎面柱转平针"
 
 #: inx/inkstitch_convert_to_stroke.inx:6
 msgid "Converts a satin column into a running stitch."
@@ -4922,7 +4922,7 @@ msgstr "选择zip文件格式可保存多种格式机器文件。"
 
 #: inx/inkstitch_fill_to_stroke.inx:3 inx/inkstitch_fill_to_stroke.inx:24
 msgid "Fill to Stroke"
-msgstr ""
+msgstr "填针转平针"
 
 #: inx/inkstitch_fill_to_stroke.inx:19
 msgid "Threshold for dead ends (mm)"
@@ -4958,7 +4958,7 @@ msgstr ""
 
 #: inx/inkstitch_flip.inx:3
 msgid "Flip Satin Column Rails"
-msgstr "翻转缎面立柱导轨"
+msgstr "翻转缎面柱导轨"
 
 #: inx/inkstitch_generate_palette.inx:3
 msgid "Generate Color Palette"
@@ -5675,7 +5675,7 @@ msgstr ""
 
 #: inx/inkstitch_jump_to_stroke.inx:37
 msgid "Running stitch length (mm)"
-msgstr ""
+msgstr "平针针距 (毫米)"
 
 #: inx/inkstitch_jump_to_stroke.inx:38
 msgid "Running stitch tolerance (mm)"
@@ -6652,7 +6652,7 @@ msgstr ""
 
 #: inx/inkstitch_zigzag_line_to_satin.inx:3
 msgid "Zig-Zag Line to Satin"
-msgstr ""
+msgstr "锯齿线转缎面柱"
 
 #: inx/inkstitch_zigzag_line_to_satin.inx:8
 msgid "Converts a zigzag line into a satin column."
