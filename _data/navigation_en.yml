@@ -217,6 +217,8 @@ developers:
       url: /developers/inkstitch/apple-silicon-manual-build/
     - title: Manual Build (older macOS systems)
       url: /developers/inkstitch/manual-build-old-macos/
+    - title: Contribute Code
+      url: /developers/inkstitch/contribute-code/
   - title: Pyembroidery
     url: /developers/pyembroidery
   - title: Documentation
