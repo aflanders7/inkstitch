@@ -60,13 +60,8 @@ Pull requests allow the project maintainers to review and provide feedback on yo
 forked repository on GitHub. Select the branch that you were working on.
 ![Add python to path](/assets/images/developers/contribute-code/Branches.png)
 
+At the top of the page you will see a notification to compare & pull request. Click the green button to create your pull request. 
+![Add python to path](/assets/images/developers/contribute-code/Pull-Request.png)
 
-
-
-
-
-
-
-
-
+Add a title and description that describes the changes you have made. Make sure that `Allow edits by maintainders` is selected. Then click the green button the create the pull request. This pull request will be visible in the pull requests tab of the main Ink/Stitch GitHub repository. Project maintainers will review your changes and either request changes or merge your changes into the main project.
 
